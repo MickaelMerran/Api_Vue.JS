@@ -3,14 +3,20 @@
         <b-card no-body class="overflow-hidden" >
             <b-row no-gutters>
                 <b-col md="6">
-                    <b-card-img :src="filmContent.Poster" class="rounded-0"></b-card-img>
+                    <b-card-img 
+                    :src="filmContent.Poster" class="rounded-0">
+                    </b-card-img>
                 </b-col>
                 <b-col md="6">
-                    <b-card-body :title="filmContent.Title">
+                    <b-card-body 
+                    :title="filmContent.Title">
                         <b-card-text>
                             {{(filmContent.Year)? 'Le film est paru en: ' + filmContent.Year : 'Non donné'}}
                         </b-card-text>
-                        <b-button :href="`#/details/${filmContent.imdbID}`">Plus d'information</b-button>
+                        <b-button 
+                        :href="`#/details/${filmContent.imdbID}`">
+                            Plus d'information
+                        </b-button>
                     </b-card-body>
                 </b-col>
             </b-row>

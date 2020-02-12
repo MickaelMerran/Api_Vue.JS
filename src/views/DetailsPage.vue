@@ -4,7 +4,11 @@
         <h1>{{filmDetails.Title}}</h1>
         <br>
         <div >
-            <b-card :img-src="filmDetails.Poster" img-alt="Card image" img-right img-height="500px" >
+            <b-card 
+            :img-src="filmDetails.Poster" 
+            img-alt="Card image" 
+            img-right 
+            img-height="500px" >
                 <b-card-text>
                 <p><strong>Résumé:</strong> {{filmDetails.Plot}}</p>
                 <p><strong>Date de sortie:</strong> {{filmDetails.Released}}</p>
